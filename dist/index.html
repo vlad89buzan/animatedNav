@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css' rel='stylesheet'>
+	<link rel="stylesheet" href="css/style.min.css">
+	<title>Animated Navigation</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		
+		<main>
+			<nav class="active menu" id="nav">
+				<ul class="menu__list">
+					<li class="menu__item"><a class="menu__link" href="#">Home</a></li>
+					<li class="menu__item"><a class="menu__link" href="#">Works</a></li>
+					<li class="menu__item"><a class="menu__link" href="#">About</a></li>
+					<li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
+				</ul>
+				<button class="menu__icon" id="toggle">
+					<div class="menu__line menu__line1"></div>
+					<div class="menu__line menu__line2"></div>
+				</button>
+			</nav>
+
+		</main>
+		
+	</div>
+	<script>
+		const menu = document.querySelector('.menu')
+		const menuBtn = document.querySelector('.menu__icon');
+		menuBtn.addEventListener('click', () => {
+			menu.classList.toggle('active');
+		})
+	</script>
+</body>
+
+</html>
